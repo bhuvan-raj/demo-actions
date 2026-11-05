@@ -1,7 +1,7 @@
 name: demo-ci
 
 on:
- check_suite: 
+ workflow_dispatch: 
 
 jobs:
  bsoft-build:

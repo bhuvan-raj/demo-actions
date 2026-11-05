@@ -1,10 +1,7 @@
 name: demo-ci
 
 on:
-  push:
-   branches: 
-     - main
-  workflow_dispatch:
+ check_suite: 
 
 jobs:
  bsoft-build:

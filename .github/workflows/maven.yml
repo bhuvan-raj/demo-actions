@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-   runs-on: bsoft
+   runs-on: ubuntu-latest
    steps:
 
      - name: execute pwd

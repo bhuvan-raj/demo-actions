@@ -33,7 +33,7 @@ jobs:
         run: echo "🔴 ALERT! Workflow failed in build or test stage. Please investigate."
 
   cleanup_artifacts:
-    needs: [build, test, deploy_to_production, send_failure_notification] # Ensure all relevant previous jobs have finished
+    needs: [build, deploy_to_production, send_failure_notification] # Ensure all relevant previous jobs have finished
     runs-on: ubuntu-latest
     # ⭐ This job ALWAYS runs, regardless of success, failure, or cancellation of previous jobs
     if: always()

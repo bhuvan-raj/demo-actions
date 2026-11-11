@@ -11,4 +11,4 @@ jobs:
    steps:
 
      - name: execute pwd
-       run: echo " this is ${{github.repository }} "
+       run: echo " this is ${{github.repository }} , runner os is ${{ runner.os }} "

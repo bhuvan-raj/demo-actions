@@ -11,7 +11,4 @@ jobs:
    steps:
 
      - name: execute pwd
-       run: pwd
-
-     - name: show the date
-       run: date
+       run: echo " this is ${{github.repository }} "
